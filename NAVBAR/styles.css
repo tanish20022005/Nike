@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+.navbar {
+    background-color: black;
+    padding: 3px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 25px;
+    margin-right: 25px;
+    border-radius: 7px;
+    margin-top: 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.nav-left {
+    flex: 1;
+}
+
+.logo .nike-logo {
+    height: 45px;
+    vertical-align: middle;
+}
+
+.nav-center {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    margin-right: 80px;
+
+}
+
+.nav-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.nav-item a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 16px;
+}
+
+.nav-item a:hover {
+    text-decoration: underline;
+}
+
+.nav-right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px 10px;
+    margin-right: 20px;
+}
+
+.search-container input {
+    border: none;
+    outline: none;
+    font-size: 16px;
+    margin-right: 5px;
+}
+
+.search-container i {
+    color: black;
+}
+
+.icons a {
+    color: white;
+    padding: 0 10px;
+}
+
+.icons a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-center,
+    .nav-right {
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        align-items: flex-start;
+        width: auto;
+    }
+
+    .nav-item {
+        width: 100%;
+        text-align: left;
+        padding: 10px 0;
+    }
+
+    .search-container {
+        margin-top: 10px;
+        width: 100%;
+        border-radius: 50%;
+    }
+
+    .icons {
+        margin-top: 10px;
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+    }
+}
